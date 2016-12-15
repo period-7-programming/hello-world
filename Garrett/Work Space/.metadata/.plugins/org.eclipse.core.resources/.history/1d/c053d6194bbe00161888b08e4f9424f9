@@ -1,0 +1,25 @@
+package hello.world;
+import java.util.Scanner;
+public class HelloWorld {
+	
+public static void main(String[] args){
+	Scanner keyInput = new Scanner(System.in);
+	System.out.println("Choose a language - English, German");
+	String input = keyInput.next();
+	
+	if (input == "English") {
+		System.out.println("Enter your name.");
+	    input = keyInput.next();
+		System.out.println("Hello " + input + ",what is your favorite color?");
+		input = keyInput.next();
+		System.out.println("Me too, where are you from?");
+		input = keyInput.next();
+	} else if (input == "German") {
+		// add german here 
+	} else {
+		System.out.println("That is not a valid language.");
+	}
+	
+	keyInput.close();
+}
+}

@@ -1,0 +1,19 @@
+package hello.world;
+import java.util.Scanner;
+public class HelloWorld {
+	
+public static void main(String[] args){
+	Scanner keyInput = new Scanner(System.in);
+	System.out.println("Enter your name.");
+	String input;
+    input = keyInput.next();
+	System.out.println("Hello " + input +",what is your favorite color?");
+	System.out.println("");
+	input = keyInput.next();
+	System.out.println("Me too, where are you from?");
+	input = keyInput.next();
+	
+	keyInput.close();
+}
+
+}

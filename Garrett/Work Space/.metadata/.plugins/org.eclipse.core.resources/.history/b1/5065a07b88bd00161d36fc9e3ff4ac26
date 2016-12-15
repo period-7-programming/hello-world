@@ -1,0 +1,37 @@
+package hello.world;
+import java.util.Scanner;
+public class HelloWorld {
+	
+public static void main(String[] args){
+	Scanner keyInput = new Scanner(System.in);
+	System.out.println("Choose a language - English, German");
+	String input = keyInput.next();
+	
+	if (input == "English") {
+    	english();		
+	} else {
+		german();
+	}
+	
+	keyInput.close();
+}
+
+public static void english(){
+	Scanner keyInput = new Scanner(System.in);
+	System.out.println("Enter your name.");
+	String input;
+    input = keyInput.next();
+	System.out.println("Hello " + input +",what is your favorite color?");
+	input = keyInput.next();
+	System.out.println("Me too, where are you from?");
+	input = keyInput.next();
+
+	
+	keyInput.close();	
+}
+
+public static void german(){
+	
+}
+
+}

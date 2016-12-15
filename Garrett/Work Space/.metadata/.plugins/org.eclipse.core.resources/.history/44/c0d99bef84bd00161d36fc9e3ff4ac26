@@ -1,0 +1,13 @@
+package hello.world;
+import java.util.Scanner;
+public class HelloWorld {
+	
+public static void main(String[] args){
+	Scanner keyInput = new Scanner(System.in);
+	System.out.println("Enter Your Name");
+	String input;
+    input = keyInput.next();
+	System.out.println("Hello " + input);
+}
+
+}

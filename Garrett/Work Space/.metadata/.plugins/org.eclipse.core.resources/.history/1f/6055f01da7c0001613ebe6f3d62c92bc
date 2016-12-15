@@ -1,0 +1,27 @@
+package hello.world;
+import java.util.Scanner;
+public class HelloWorld {
+	
+public static void main(String[] args){
+	Scanner keyInput = new Scanner(System.in);
+	String input;
+	System.out.println("Enter your name.");
+	
+	if (keyInput.next().equals("no")) {
+		System.out.println("Well ok then, I didn't want to know your name anyways!");
+		System.out.println("Will you at least tell me what your favorite color is?");
+	} else {
+	input = keyInput.next();
+	System.out.println("Hello " + input + " ,what is your favorite color?");
+	}
+	input = keyInput.next();
+	System.out.println("Me too, where are you from?");
+	input = keyInput.next();
+	System.out.println("I've always wanted to go there, but since I am a computer program I cannot travel.");
+    System.out.println("What is your lastname?");
+	input = keyInput.next();
+	System.out.println("");
+	System.out.println("Thank you for participating in this program, this information has been reported to the police.");
+	keyInput.close();
+}
+}
